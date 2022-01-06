@@ -30,9 +30,6 @@ def getOobConfirmationCode(idToken, requestType):
     resultJSON = r.json()
     return resultJSON
 
-#resultJSON = verifyPassword('xpfizmahxciipjcbms@bptfp.net', True, 'letsgooooo123')
-#idToken = resultJSON['idToken']
-
 def createUser(birthdate, firstName, pronoun, latitude, longitude, enableNotificationsMessages, enableNotificationsPostLikes, enableNotificationsNewPostNearby, username, idToken):
     body = {
             'birthdate': f'{birthdate}T05:00:00.000Z',
